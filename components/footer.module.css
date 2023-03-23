@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 2rem;
+}
+
+.navItems {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navItem {
+  display: inline-block;
+  margin-right: 1rem;
+}

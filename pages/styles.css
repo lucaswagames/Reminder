@@ -1,0 +1,302 @@
+:root {
+  --main-color: #009224;
+  --main-color-hover: #00681a;
+  --bg-color: #fff;
+  --font-color: #333333;
+  --navbar-color:rgba(0, 0, 0, 0.05);
+  --card-color: var(--main-color);
+  --grey-color: #f0f0f0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0 100px;
+  background: var(--bg-color);
+  color: var(--font-color);
+}
+
+li,
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  font-weight: 500;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+
+iframe {
+  background: #ccc;
+  border: 1px solid #ccc;
+  height: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  filter: invert(1);
+}
+
+
+
+/****************************************************************************************************/
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--main-color);
+}
+
+button {
+  background: #8d8d8d;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+a {
+  color: black;
+}
+
+button:hover {
+  background: var(--main-color-hover);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="color"],
+select {
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  color: #444;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="color"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #999;
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+input[type="color"]::placeholder,
+select::placeholder {
+  color: #aaa;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: rem;
+  margin: 1rem 0;
+}
+
+
+.card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  margin: 1rem 0;
+  background: #e6e6e6;
+  color: var(--font-color);
+  text-align: justify;
+  font-size: 1.2rem;
+  width: 250px;
+  transition: 0.3 ease;
+  height: 500px;
+  overflow: scroll;
+}
+
+/* The container with the scrollbar */
+.card {
+  overflow: scroll;
+  height: 200px; /* Set a specific height for the container */
+  width: 300px;  /* Set a specific width for the container */
+}
+
+/* Change the scrollbar width */
+.card::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Change the scrollbar track color */
+.card::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Change the scrollbar thumb color */
+.card::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Change the scrollbar thumb color on hover */
+.card::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3 ease;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--font-color);
+}
+
+.card p {
+  margin: 1rem 0;
+}
+
+.card p:nth-child(3) {
+  margin: 1rem 0;
+}
+
+.card span {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+.card a {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+.card a:hover {
+  color: var(--main-color);
+}
+
+.card a:active {
+  color: var(--main-color-hover);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+
+
+.ReminderItem {
+  border-radius: 1em;
+  border: solid 3px var(--main-color);
+  background-color: var(--grey-color);
+  margin: 1rem 0;
+  transition: 0.1s ease ;
+  padding: 1px;
+  width: 70%;
+  cursor: pointer;
+}
+
+.ReminderItem:hover {
+  transform: translateX(15px);
+  transition: 0.1s ease ;
+}
+
+.ReminderItem h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--main-color);
+  margin-left: 20px;
+}
+
+.ReminderItem p {
+  margin-left: 20px;
+}
+
+.ReminderItem span {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background: #e6e6e6;
+  grid-gap: 2rem;
+  margin: 2rem 0;
+  color: black;
+  border-radius: 5px;
+}
+
+.UserItem {
+  border-radius: 1em;
+  margin: 1rem 0;
+  transition: 0.1s ease ;
+  padding: 5px;
+  width: 700px;
+  cursor: pointer;
+  text-align: center;
+  background: #e6e6e6;
+  margin: 0 auto;
+}
+
+.UserItem h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--main-color);
+  margin-left: 20px;
+}
+
+.UserItem p {
+  margin-left: 20px;
+}
+
+.UserItem span {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+.UserItem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--font-color);
+  margin: 1rem 0;
+}
+
+.UserItem button {
+  margin: 1rem 0;
+} 
+
+
+
