@@ -1,11 +1,9 @@
 import Link from "next/link"
 import { signIn, signOut, useSession } from "next-auth/react"
 import styles from "./header.module.css"
-import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
 // @ts-ignore
-import Head from "next/head"
 
 // The approach used in this component shows how to build a sign in and sign out
 // component that works on pages which support both client and server side
